@@ -1,0 +1,33 @@
+.team-description-section__social-media-link {
+  display: inline-block;
+}
+.team-description-section__social-media-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 16px;
+}
+.team-description-section__social-media-icon {
+  fill: rgba(175, 177, 184, 1);
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: fill 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier);
+
+  &:active,
+  &:hover,
+  &:focus {
+  background-color: var(--third-brand-color);
+  fill: var(--first-brand-color);
+  }
+}
+
+.footer-section__social-media-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 10px;
+}

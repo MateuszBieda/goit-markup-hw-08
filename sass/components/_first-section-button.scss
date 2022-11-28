@@ -1,0 +1,35 @@
+.first-section__button {
+  font-family: inherit;
+  background-color: var(--third-brand-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: var(--first-brand-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 42px;
+  padding-right: 41px;
+  border-style: none;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  transition: color 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier),
+    box-shadow 250ms var(--cubic-bezier);
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: rgb(16, 234, 250);
+  }
+}
+
+.first-section__button-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
