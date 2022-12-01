@@ -3,6 +3,12 @@
   border-bottom: solid #ececec 1px;
   padding-bottom: 24px;
   padding-top: 24px;
+
+  @media screen and (max-width: 767px){
+
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
 }
 
 .header__contacts-icon {
@@ -22,6 +28,32 @@ header li {
   justify-content: space-between;
   align-items: center;
   background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+
+}
+
+.header__nav{
+  display:flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+}
+
+.header__links{
+
+  display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
 }
 
 .header__links li:nth-child(1) {
@@ -38,6 +70,13 @@ header li {
   font-size: 14px;
   line-height: 1.17;
   margin: auto;
+}
+
+.header__contacts-item{
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 0px;
+  }
 }
 .header__navigation-link {
   color: rgba(33, 33, 33, 1);
@@ -86,6 +125,11 @@ header li {
 .header__contacts-link:hover,
 .header__contacts-link:focus {
   color: var(--third-brand-color);
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+  }
+
 }
 
 .header__contacts-link svg {
@@ -93,4 +137,44 @@ header li {
 }
 .header__contacts-link:hover svg {
   fill: var(--third-brand-color);
+}
+.menu-window{
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:40px;
+  height:40px;
+  background-color: transparent;
+  color:#212121;
+  border:none;
+  margin-left:auto;
+  cursor:pointer;
+
+  &:hover, 
+  &:focus{
+
+  fill: var(--third-brand-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  } 
+  
+}
+.menu-mobile{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  padding: 15px 10px 48px 40px;
+  z-index:3;
+
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

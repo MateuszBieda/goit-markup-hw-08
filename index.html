@@ -20,7 +20,7 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <nav>
+        <nav .header__nav>
           <div class="header__logo">
             <a class="header__logo--style" href="#"
               ><span class="header__logo--part1">Web</span
@@ -51,7 +51,7 @@
         </nav>
         <div class="header__links">
           <ul>
-     <li>
+            <li header__contacts-item>
               <a class="header__contacts-link" href="mailto:info@devstudio.com"
                 ><svg width="16" height="12" class="header__contacts-icon">
                   <use
@@ -61,13 +61,49 @@
                 info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="header__contacts-item">
               <a class="header__contacts-link" href="tel:+48111111111"
                 ><svg class="header__contacts-icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone-1"></use></svg>+48 111 111 111</a
               >
             </li>
           </ul>
+          <button class="menu-window" data-menu-open>
+            <svg class="menu-burger" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu_24px"></use>
+            </svg>
+            </button>
+        </div>
+        <div class="menu-mobile flex is-hidden" data-menu>
+          <div>
+            <button class="menu-close" data-menu-close>
+              <svg class="menu-close" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link mob-menu-list__link--current" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-list__down">
+            <a class="mob-menu-list__tell link" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+            <a class="mob-menu-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="mob-menu-list__social list">
+              <li class="mob-menu-list__social-item">Instagram</li>
+              <li class="mob-menu-list__social-item">Twitter</li>
+              <li class="mob-menu-list__social-item">Facebook</li>
+              <li class="mob-menu-list__social-item">LinkedIn</li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -228,7 +264,7 @@
           </div>
         </div>
       </section>
-      <section class="team-description-section section">
+      <section class="team-description-section container section">
         <div class="=container">
           <h2 class="team-description-section__paragraph">Nasz zespół</h2>
           <ul class="team-description-section__image-list container">
@@ -238,8 +274,7 @@
                   class="team-description-section__individual-portrait"
                   src="./images/img4.jpg"
                   alt="John Doe"
-                  width="270"
-                  height="260"
+                  width="450"
                 />
                 <h3>John Doe</h3>
                 <p class="team-description-section__position-description">
@@ -325,8 +360,7 @@
                   class="team-description-section__individual-portrait"
                   src="./images/img5.jpg"
                   alt="John Doe"
-                  width="270"
-                  height="260"
+                  width="450"
                 />
                 <h3>John Doe</h3>
                 <p class="team-description-section__position-description">
@@ -412,8 +446,7 @@
                   class="team-description-section__individual-portrait"
                   src="./images/img6.jpg"
                   alt="John Doe"
-                  width="270"
-                  height="260"
+                  width="450"
                 />
                 <h3>John Doe</h3>
                 <p class="team-description-section__position-description">
@@ -499,8 +532,7 @@
                   class="team-description-section__individual-portrait"
                   src="./images/img7.jpg"
                   alt="John Doe"
-                  width="270"
-                  height="260"
+                  width="450"
                 />
                 <h3>John Doe</h3>
                 <p class="team-description-section__position-description">
@@ -583,7 +615,7 @@
           </ul>
         </div>
       </section>
-      <section class="clients-section">
+      <section class="clients-section container">
         <div class="clients-section__paragraph container">
           <h2>Nasi klienci</h2>
         </div>
@@ -836,5 +868,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
