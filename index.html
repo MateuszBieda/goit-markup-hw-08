@@ -20,6 +20,7 @@
   <body>
     <header class="header">
       <div class="header__container container">
+        
         <nav .header__nav>
           <div class="header__logo">
             <a class="header__logo--style" href="#"
@@ -27,6 +28,7 @@
               ><span class="header__logo--part2">Studio</span></a
             >
           </div>
+          
           <ul class="header__links">
             <li>
               <a
@@ -49,6 +51,8 @@
             </li>
           </ul>
         </nav>
+        <div class="test">
+          </div>
         <div class="header__links">
           <ul>
             <li header__contacts-item>
@@ -68,12 +72,15 @@
               >
             </li>
           </ul>
-          <button class="menu-window" data-menu-open>
-            <svg class="menu-burger" width="24" height="16">
+        </div>
+        <button  class="menu-window" data-menu-open  aria-expanded="false"
+          aria-controls="mobile-menu">
+            <svg class="menu-burger" width="24" height="16" fill="currentColor">
               <use href="./images/icons.svg#icon-menu_24px"></use>
             </svg>
-            </button>
-        </div>
+          </button>
+
+
         <div class="menu-mobile flex is-hidden" data-menu>
           <div>
             <button class="menu-close" data-menu-close>
@@ -616,10 +623,10 @@
         </div>
       </section>
       <section class="clients-section container">
-        <div class="clients-section__paragraph container">
+        <div class="clients-section__paragraph">
           <h2>Nasi klienci</h2>
         </div>
-        <div class="container clients-section__icons-box">
+        <div class="clients-section__icons-box">
           <svg class="clients-section__icon" width="170" height="92">
             <use href="./images/icons.svg#icon-Client-1-1"></use>
           </svg>
@@ -640,11 +647,12 @@
           </svg>
         </div>
       </section>
+    </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="footer-section">
-          <div>
+        <div class="footer-section footer--flex">
+          <d  iv>
             <div class="footer-section__logo-footer-box">
               <a class="footer-section__logo--style" href="#">
                 <span class="footer-section__logo--part1">Web</span>
@@ -676,7 +684,7 @@
                 </ul>
               </address>
             </div>
-          </div>
+          </d>
           <div class="footer-section__social-media-box">
             <p class="footer-section__link">DOŁĄCZ DO NAS</p>
             <div class="footer-section__footer-icon-flex">

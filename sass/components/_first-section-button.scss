@@ -25,6 +25,11 @@
   &:focus {
     background-color: rgb(16, 234, 250);
   }
+  @media screen and (min-width: 480px) {
+    padding: 10px 32px;
+    font-size: 16px;
+    min-width: 200px;
+  }
 }
 
 .first-section__button-container {

@@ -3,7 +3,7 @@
   border-bottom: solid #ececec 1px;
   padding-bottom: 24px;
   padding-top: 24px;
-
+  width: 100%;
   @media screen and (max-width: 767px){
 
     padding-bottom: 16px;
@@ -138,18 +138,21 @@ header li {
 .header__contacts-link:hover svg {
   fill: var(--third-brand-color);
 }
+
 .menu-window{
 
-  display:flex;
-  align-items: center;
-  justify-content: center;
   width:40px;
   height:40px;
-  background-color: transparent;
-  color:#212121;
+  display:block;
+  align-items: center;
+  justify-content: center;
+  background-color:transparent;
+  fill:#212121;
   border:none;
   margin-left:auto;
   cursor:pointer;
+  
+  
 
   &:hover, 
   &:focus{
