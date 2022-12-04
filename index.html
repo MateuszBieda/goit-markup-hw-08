@@ -75,7 +75,7 @@
         </div>
         <button  class="menu-window" data-menu-open  aria-expanded="false"
           aria-controls="mobile-menu">
-            <svg class="menu-burger" width="24" height="16" fill="currentColor">
+            <svg width="24" height="16" fill="currentColor">
               <use href="./images/icons.svg#icon-menu_24px"></use>
             </svg>
           </button>
@@ -83,33 +83,33 @@
 
         <div class="menu-mobile flex is-hidden" data-menu>
           <div>
-            <button class="menu-close" data-menu-close>
-              <svg class="menu-close" width="40" height="40">
+            <button class="menu-mobile__button-close" data-menu-close>
+              <svg  width="40" height="40">
                 <use  
                  href="./images/icons.svg#icon-close_40px"></use>
               </svg>
             </button>
-            <ul class="mob-menu-list list">
-              <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link mob-menu-list__link--current" href="./index.html">Agencja</a>
+            <ul class="mob-menu__list">
+              <li class="menu-mobile__list-item">
+                <a class="menu-mobile__list-link link menu-mobile__list-link--current" href="./index.html">Agencja</a>
               </li>
-              <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link" href="./portfolio.html">Portfolio</a>
+              <li class="menu-mobile__list-item">
+                <a class="menu-mobile__list-link link" href="./portfolio.html">Portfolio</a>
               </li>
-              <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link" href="">Kontakt</a>
+              <li class="menu-mobile__list-item">
+                <a class="menu-mobile__list-link link" href="">Kontakt</a>
               </li>
             </ul>
           </div>
-          <div class="mob-menu-list__down">
-            <a class="mob-menu-list__tell link" href="tel:+48111111111">
+          <div class="menu-mobile__list--down">
+            <a class="menu-mobile__phone link" href="tel:+48111111111">
               +48 111 111 111</a>
-            <a class="mob-menu-list__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <ul class="mob-menu-list__social list">
-              <li class="mob-menu-list__social-item">Instagram</li>
-              <li class="mob-menu-list__social-item">Twitter</li>
-              <li class="mob-menu-list__social-item">Facebook</li>
-              <li class="mob-menu-list__social-item">LinkedIn</li>
+            <a class="menu-mobile__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="menu-mobile__social list">
+              <li class="menu-mobile__social-item">Instagram</li>
+              <li class="menu-mobile__social-item">Twitter</li>
+              <li class="menu-mobile__social-item">Facebook</li>
+              <li class="menu-mobile__social-item">LinkedIn</li>
             </ul>
           </div>
         </div>
@@ -219,6 +219,7 @@
                   <img
                     class="company-descripton-section__image"
                     src="./images/img1.jpg"
+                    srcset="./images/img aplikacje_comp1x.jpg 1x, ./images/img aplikacje_comp2x.jpg 2x"
                     alt="programowanie"
                     width="370"
                     height="294"
@@ -235,6 +236,7 @@
                   <img
                     class="company-descripton-section__image"
                     src="./images/img2.jpg"
+                    srcset="./images/img_aplikacje_mob1x.jpg 1x, ./images/img_aplikacje_mob1x.jpg 2x"
                     alt="tworzenie aplikacji"
                     width="370"
                     height="294"
@@ -250,9 +252,10 @@
                 <div class="company-descripton-section__image-box">
                   <img
                     class="company-descripton-section__image"
+                    srcset="./images/img_rozwiazania_graf1x.jpg 1x, ./images/img_rozwiazania_graf2x.jpg 2x"
                     src="./images/img3.jpg"
                     alt="tworzenie grafiki"
-                    width="370"
+                    width="570"
                     height="294"
                   />
                   <div class="company-descripton-section__text-box">
@@ -275,6 +278,7 @@
                 <img
                   class="team-description-section__individual-portrait"
                   src="./images/img4.jpg"
+                  srcset="./images/img.product_designer1x.jpg 1x, ./images/img.product_designer2x.jpg 2x"
                   alt="John Doe"
                   width="450"
                 />
@@ -361,6 +365,7 @@
                 <img
                   class="team-description-section__individual-portrait"
                   src="./images/img5.jpg"
+                  srcset="./images/developer1x.jpg 1x, ./images/developer2x.jpg 2x"
                   alt="John Doe"
                   width="450"
                 />
@@ -447,6 +452,7 @@
                 <img
                   class="team-description-section__individual-portrait"
                   src="./images/img6.jpg"
+                  srcset="./images/imgmarketing1x.jpg 1x, ./images/imgmarketing2x.jpg 2x"
                   alt="John Doe"
                   width="450"
                 />
@@ -533,6 +539,7 @@
                 <img
                   class="team-description-section__individual-portrait"
                   src="./images/img7.jpg"
+                  srcset="./images/imgdesigner1x.jpg 1x, ./images/imgdesigner2x.jpg 2x"
                   alt="John Doe"
                   width="450"
                 />
@@ -857,7 +864,7 @@
                     >Regulamin</a
                   >
                   i
-                  <a class="checkbox-link" href="#privacy-policy"
+                  <a class="modal__checkbox-link" href="#privacy-policy"
                     >Politykę Prywatności</a
                   ></span
                 >
