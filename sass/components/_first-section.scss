@@ -1,3 +1,24 @@
+.first-section__main-paragraph {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-size: 26px;
+  max-width: 365px;
+  line-height: 1.61;
+  
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
 .first-section {
   background-color: #2f303a;
   background-image: url(../images/headermobile.jpg),
@@ -72,25 +93,5 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom:200px;
-  }
-
-  &__main-paragraph {
-  max-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  }
-  @media screen and (min-width:480px) {
-    font-size: 26px;
-    max-width: 365px;
-    line-height: 1.61;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: 1.36;
-    max-width: 696px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
