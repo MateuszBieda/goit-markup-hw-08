@@ -1,7 +1,7 @@
 .team-description-section {
-  background-color: #f5f4fa;
+  background-color: rgba(245, 244, 250, 1);
   padding-bottom: 60px;
-  background-color: var(--team-background-color);
+  padding-top: 60px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -29,14 +29,12 @@
   align-content: center;
   // column-gap: 10px;
   grid-gap:30px;
-  padding-bottom: 94px;
 
-  
-  
- 
 }
 .team-description-section__paragraph {
-  // padding-top: 94px;
+  font-size:28px;
+  line-height: 1.17;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
