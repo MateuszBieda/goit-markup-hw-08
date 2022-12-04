@@ -6,6 +6,8 @@
 body {
   font-family: "Roboto", sans-serif, "Raleway", sans-serif;
   color: rgba(33, 33, 33, 1);
+  scroll-behavior: auto;
+  
 }
 * {
   box-sizing: border-box;
@@ -16,7 +18,6 @@ h1 {
   font-size: 44px;
   line-height: 1.36;
   font-weight: 900;
-  padding-top: 200px;
 }
 h2 {
   font-size: 36px;
@@ -50,4 +51,3 @@ nav {
 input[type="checkbox"] {
   display: none;
 }
-
