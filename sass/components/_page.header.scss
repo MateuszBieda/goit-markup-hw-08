@@ -144,6 +144,11 @@ display:flex;
     border-radius: 2px;
     top: 44px;
     left: 0;
+    
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: 53px; 
+    }
   }
 
   &--active2:hover::after,
@@ -156,8 +161,18 @@ display:flex;
     border-radius: 2px;
     top: 44px;
     left: 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: 53px; 
+    }
   }
+ 
 }
+
+
+
+
+
 
 .header__contacts-link {
   color: var(--grey-font-icon-color);

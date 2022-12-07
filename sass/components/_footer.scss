@@ -151,11 +151,16 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: rgba(255, 255, 255, 1);
   margin-top: 20px;
+ 
 
   @media (min-width: 1200px) {
     width: 358px;
   }
-}
+  @media (max-width: 479px) {
+    max-width:100%;
+  }
+
+} 
 .footer-section__label {
   font-weight: 700;
   font-size: 14px;
@@ -168,7 +173,7 @@
   flex-direction: column;
   row-gap: 20px;
   margin-top: 60px;
-
+  
   
   @media (min-width: 768px) {
     display:flex;
